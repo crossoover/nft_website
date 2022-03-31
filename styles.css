@@ -132,6 +132,9 @@ footer {
 
   .gallery a img {
     width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0%);
   }
 
   .gallery a p {
