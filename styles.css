@@ -133,6 +133,8 @@ footer {
   .gallery a img {
     width: auto;
     height: auto;
+    min-height: 100%;
+    max-height: auto;
     object-fit: contain;
     filter: grayscale(0%);
   }
