@@ -37,15 +37,27 @@ body {
 .sticky-menu .bg {
   position: absolute;
   width: 100vw;
-  height: 17px;
+  height: 19px;
   background-image: linear-gradient(90deg, rgb(23, 92, 156), rgb(52, 182, 182));
 }
 .sticky-menu .sticky-menu__content a {
   color: rgb(228, 237, 100);
   text-decoration: none;
   padding: 0 5px;
+  line-height: 14px;
   border-right: 1px solid rgb(228, 237, 100);
   white-space: nowrap;
+}
+.sticky-menu .sticky-menu__content a sup {
+  display: inline-block;
+  font-size: 12px;
+  transform: translateY(2px);
+  margin-left: 3px;
+  padding: 0 1px;
+  line-height: 11px;
+  border-radius: 2px;
+  background: rgb(228, 237, 100);
+  color: rgb(23, 92, 156);
 }
 .sticky-menu:hover .sticky-menu__content {
   animation-play-state: paused;
@@ -56,7 +68,9 @@ body {
 .sticky-menu__content {
   display: flex;
   flex-flow: row nowrap;
+  align-items: flex-end;
   width: fit-content;
+  transform: translate(0, 0);
   animation: ticker 200s infinite linear;
 }
 .parallax {
